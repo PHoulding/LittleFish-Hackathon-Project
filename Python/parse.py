@@ -38,7 +38,8 @@ class Parser():
         testData=[]
         with open(inputFile,"r") as f:
             for i,l in enumerate(f):
-                inputData.append(l)
+                if(i>0):
+                    inputData.append(l)
         random.shuffle(inputData)
         split=int(len(inputData)*0.9)
         trainData=inputData[:split]
