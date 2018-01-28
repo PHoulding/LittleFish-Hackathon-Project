@@ -41,7 +41,7 @@ class Parser():
                 if(i>0):
                     inputData.append(l)
         random.shuffle(inputData)
-        split=int(len(inputData)*0.9)
+        split=int(len(inputData)*0.8)
         trainData=inputData[:split]
         testData=inputData[split:]
         self.writeTrainTest(trainData,testData)
